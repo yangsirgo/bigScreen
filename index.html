@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统一数据展示视图</title>
+    <script src="js/echarts.js"></script>
+    <link href="css/zn.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/china.js"></script>
+    
+    <script type="text/javascript">
+        var colorFont = "#22F1F4";
+        var colorArry = ['#084489', '#0D599C','#1781C1', '#22AEEB'];
+    </script>
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="main" class="abs">
+
+    <div id="maintitle" class="abs animated bounceInDown">网安天擎综合展示平台</div>
+    
+    
+    <div id="maininfo" class="abs animated bounceInDown">
+        
+        <div class="timer">2018-12-12</div>
+        <div id="dataline" class="dataline">368,879,458</div>
+
+    </div>
+
+    <script type="text/javascript">
+        var orandata = 368155786;
+        function advnsdata(){
+            var suji = parseInt(10*Math.random())
+            orandata += suji;
+            $("#dataline").text(toThousands(orandata));
+        }
+        function toThousands(num) {  
+             return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');  
+        } 
+        var dataintv = setInterval(advnsdata,1000); 
+    </script>>
+
+
+    <div class="leftgroup animated fadeInLeftBig">
+         
+    <div class="colm abs">
+        <div id="rada" class="abs portal">
+        <div id="radat" class="title rltv">
+            <div>实时告警信息</div>
+        </div>
+        <div id="radac" class="content"></div>
+        
+                <div class="cornr1"></div>
+                <div class="cornr2"></div>
+                <div class="cornr3"></div>
+                <div class="cornr4"></div>
+        <script src="js/1_rada.js"></script>
+        </div>
+    </div>
+
+    <div class="colm abs" style="top:25%">
+        <div id="health" class="abs portal">
+        <div id="healtht" class="title rltv">
+            <div>设备健康度统计</div>
+        </div>
+        <div id="healthc" class="content"></div>
+                <div class="cornr1"></div>
+                <div class="cornr2"></div>
+                <div class="cornr3"></div>
+                <div class="cornr4"></div>
+        <script src="js/2_health.js"></script>
+        </div>
+    </div>
+    
+    
+    <div class="colm abs" style="top:50%"> 
+     <div id="barsbottom" class="abs portal">
+             <div class="cornr1"></div>
+            <div class="cornr2"></div>
+            <div class="cornr3"></div>
+            <div class="cornr4"></div>
+        <div  class="title rltv">
+            <div>流量趋势分析</div>
+            <div class="border_up"></div>
+            <div class="border_down"></div>
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+            <div class="circle c4"></div>
+        </div>
+
+        <div class="content">
+            <div id="yinbo" class="abs" style="width: 100%;height:100%" ></div>
+            <script src="js/3_yinbo.js"></script>
+        </div>
+     </div>
+    </div>
+
+
+<div class="colm abs" style="top:75%">
+    
+    
+    <div id="bars" class="abs portal">
+        <div id="barst" class="title rltv">
+            <div>波形指数监控</div>
+        </div>
+        <div id="boxing" class="content"></div>
+        
+        
+        <script src="js/4_boxing.js"></script>
+    </div>
+    
+    
+    </div>
+
+    </div>
+   
+    <div id="mapback" class="abs animated zoomIn">
+        <div id="map" class="abs"></div>
+        <script src="js/map.js"></script>
+    </div>
+    
+    <div id="mapback2" class="abs animated fadeInUp"></div>
+    
+
+    <div class="rightgroup animated fadeInRightBig">
+    
+    <div class="colm abs" >
+
+        <div id="tongduan" class="abs portal">
+        <div id="tongduant" class="title rltv">
+            <div>双柱形统计</div>
+        </div>
+        <div id="shuangzhu" class="content"></div>
+        
+               
+        
+        <script src="js/5_shuangzhu.js"></script>
+        </div>
+    </div>
+
+
+
+    <div class="colm abs" style="top:25%">
+    
+        <div id="warns" class="abs portal">
+        <div id="warnst" class="title rltv">
+            <div>告警分类统计</div>
+        </div>
+        <div id="warnsc" class="content"></div>
+        
+                <div class="cornr1"></div>
+                <div class="cornr2"></div>
+                <div class="cornr3"></div>
+                <div class="cornr4"></div>
+        
+        <script src="js/warns.js"></script>
+        </div>
+        
+    </div>
+
+    <div class="colm abs" style="top:50%">
+        <div id="health" class="abs portal">
+        <div id="healtht" class="title rltv">
+            <div>动态监控柱形</div>
+        </div>
+        <div id="zhuxing" class="content"></div>
+                <div class="cornr1"></div>
+                <div class="cornr2"></div>
+                <div class="cornr3"></div>
+                <div class="cornr4"></div>
+        <script src="js/7_zhuxing.js"></script>
+        </div>
+    </div>
+
+    <div class="colm abs" style="top:75%">
+        <div id="health" class="abs portal">
+        <div id="healtht" class="title rltv">
+            <div>动态监控三角</div>
+        </div>
+        <div id="sanjiao" class="content"></div>
+                <div class="cornr1"></div>
+                <div class="cornr2"></div>
+                <div class="cornr3"></div>
+                <div class="cornr4"></div>
+        <script src="js/8_sanjiao.js"></script>
+        </div>
+    </div>
+   
+
+    </div>
+    
+    
+    <div class="abs animated bounceInUp" id="circlefour">
+           <div id="circlecell1" class="circlecell"></div>
+           <div id="circlecell2" class="circlecell"></div>
+           <div id="circlecell3" class="circlecell"></div>
+           <div id="circlecell4" class="circlecell"></div>
+
+           <script src="js/circlefour.js"></script>
+    </div>
+    
+
+
+    
+    
+  
+</div>
+
+
+<!--
+
+<script src='jsback/three.min.js'></script>
+<script src='jsback/CopyShader.js'></script>
+<script src='jsback/EffectComposer.js'></script>
+<script src='jsback/FilmPass.js'></script>
+<script src='jsback/FilmShader.js'></script>
+<script src='jsback/ShaderPass.js'></script>
+<script src='jsback/RenderPass.js'></script>
+
+
+
+<script  src="jsback/index.js"></script>
+-->
+
+<!--<canvas id="bcanvas" width="1920" height="974"></canvas>-->
+<!--<script src="js/backaction.js"></script>-->
+<style>
+#space {
+  width: 100%;
+  height:100%;
+}
+</style>
+<canvas id="space"></canvas>
+<script src="js/backaction2.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   /* background-image: url(../images/back.jpg);*/
+    overflow: hidden;
+    background-size:100%;
+    background-color: black;
+	
+}
+@font-face{
+    font-family:fzzd;
+    src:url(fzzd.TTF) format("TrueType");
+}
+@font-face{
+    font-family:digifaw;
+    src:url(digifaw.ttf) format("TrueType");
+}
+.abs{
+    position: absolute;
+}
+.rltv{
+    position: relative;
+}
+#main{
+    bottom:0px;left:0px;right:0px;top:0px;
+}
+#maintitle{
+    text-align: center;
+    color: white;
+    /*font-family: fzzd;*/
+	font-family:"微软雅黑";
+	font-weight:bold;
+    font-size: 35px;
+    color: #fff;
+    width:100%;
+    height: 200px;
+    line-height: 150px;
+    top:-40px;
+    z-index: 2000;
+    background-image: url(../images/titleback.png);
+    background-repeat: no-repeat;
+    background-position: center top; 
+}
+#maininfo{
+    text-align: center;
+    color: white;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    top:60px;
+    z-index: 2000;
+}
+.dataline{
+    font-size: 30px;
+    color: #23B3F2;
+    font-family:digifaw;
+}
+#topu{
+    width: 800px;
+    height: 500px;
+    left: 50%;
+    margin-left: -400px;
+    top: 100px;
+}
+
+.portal{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 8px;
+    background-color:rgba(0,0,0,0.2); 
+}
+#mapback{
+    width:100%;
+    bottom:0px;
+    height:100%;
+    position: absolute;
+}
+#mapback2{
+    background-image:url(../images/worldback.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 35%;
+    width:100%;
+    bottom:0px;
+    height:100%;
+    position: absolute;
+}
+#map{
+    bottom:0px;top:0px;left:0px;right:0px;
+     transform: rotateX(30deg);
+    -webkit-transform: rotateX(30deg); 
+}
+.colm{
+    height: 25%;
+    width: 100%; 
+}
+.portal>.title{
+    width:100%;
+    height:34px;
+    color: #23B3F2;
+    text-align: center;
+    font-size: 16px; 
+    line-height: 34px;
+    position: relative;
+	/*background-color:#022257;*/
+	background-image:url(../images/stitleback.png);
+	background-repeat:repeat-x;
+	
+}
+.portal>.title>.border_up{
+    /*
+    border-top: 1px solid #0974C0;
+    border-left: 1px solid #0974C0;
+    border-right: 1px solid #0974C0;
+    */
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.portal>.title>.border_down{
+    /*
+    border-bottom: 1px solid #0974C0;
+    border-left: 1px solid #0974C0;
+    border-right: 1px solid #0974C0;
+    */
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.portal>.title>.c1{
+    left: -2px;
+    top: 8px;
+}
+.portal>.title>.c2{
+    left: -2px;
+    bottom: 8px;
+}
+.portal>.title>.c3{
+    right: -4px;
+    top: 8px;
+}
+.portal>.title>.c4{
+    right: -4px;
+    bottom: 8px;
+}
+.portal>.title>.circle{
+    /*background-color: #0974C0;*/
+    border-radius:5px ;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+.portal>.content{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 40px;
+}
+table.colorboxtable{
+    margin-right: auto;
+    margin-left: auto;
+
+}
+table.colorboxtable tr td{
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+}
+table.colorboxtable tr td.clable{
+    padding-right: 8px;
+    text-align: right;
+}
+.leftgroup{
+   position: absolute;
+   left: 10px;
+   top: 20px;
+   bottom: 10px;
+   width: 20%;
+   z-index: 1000;
+}
+.rightgroup{
+   position: absolute;
+   right: 10px;
+   top: 20px;
+   bottom: 10px;
+   width: 20%; 
+   z-index: 1000;
+}
+.colorbox{
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
+    line-height:30px;
+    background-color: rgba(1,142,233,0.6);
+}
+.cornerbox{
+    width: 50%;
+    position: relative;
+    float: left;
+}
+.cornr11{
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #3EACF4;
+    border-left: 1px solid #3EACF4;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+.cornr21{
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #3EACF4;
+    border-right: 1px solid #3EACF4;
+    position: absolute;
+    right: -1px;
+    top:  -1px;
+}
+.cornr31{
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid #3EACF4;
+    border-left: 1px solid #3EACF4;
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+}
+.cornr41{
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid #3EACF4;
+    border-right: 1px solid #3EACF4;
+    position: absolute;
+    right: -1px;
+    bottom:  -1px;
+}
+.cntitle{
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+
+}
+
+.cluns{
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    width: 80px;
+    height: 65px;
+}
+
+.clun1{
+    background-image: url(../images/clun.png);
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.clun2{
+    background-image: url(../images/clun.png);
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    position: absolute;
+    left: 42px;
+    top: 32px;
+}
+
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-webkit-keyframes rotation2{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
+
+.Rotation{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 5s linear infinite;
+    -moz-animation: rotation 5s linear infinite;
+    -webkit-animation: rotation 5s linear infinite;
+    -o-animation: rotation 5s linear infinite;
+}
+.Rotation2{
+    -webkit-transform: rotate(360deg);
+    animation: rotation2 5s linear infinite;
+    -moz-animation: rotation2 5s linear infinite;
+    -webkit-animation: rotation2 5s linear infinite;
+    -o-animation: rotation2 5s linear infinite;
+}
+
+.clinfo table{
+    color: #fff;
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+.clinfo table tr td{
+    padding: 5px;
+    font-size: 13px;
+}
+.cllabel{
+    text-align: right;
+}
+#circlefour{
+    width: 50%;
+    bottom: 0px;
+    left: 25%;
+    right: 25%;
+    top: 80%;
+}
+.circlecell{
+float: left;
+width: 25%;
+height: 100%;
+position: relative;
+}
